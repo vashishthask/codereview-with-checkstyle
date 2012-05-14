@@ -7,7 +7,6 @@ This document provides the details about them and also on how to run them.
 
 
 ##Build
------
 To build the application simply run build.bat on Windows platform or run build.sh on UNIX/LINUX platform.
 You need to have ANT available to build the application. As part of build, it will create classes in bin directory 
 and will create a Jar file inside target directory.
