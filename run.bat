@@ -1,0 +1,1 @@
+java -classpath bin;lib\checkstyle-all-4.4.jar;lib\commons-lang-2.3.jar com.puppycrawl.tools.checkstyle.Main -c custom_check.xml %1

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE checkstyle-metadata PUBLIC
+"-//eclipse-cs//DTD Check Metadata 1.0//EN"
+"http://eclipse-cs.sourceforge.net/dtds/checkstyle-metadata_1_0.dtd">
+<checkstyle-metadata>
+	<rule-group-metadata name="Project ABC Coding Problems - Must Fix"
+		priority="900">
+		<rule-metadata name="Illegal Exception Throw"
+			internal-name="IllegalExceptionThrowsCheck" parent="TreeWalker">
+			<alternative-name
+				internal-name="com.shri.article.checkstyle.check.IllegalExceptionThrowsCheck" />
+			<description></description>
+			<property-metadata name="illegalExceptionsInThrows"
+				datatype="String" default-value="Exception,java.lang.Exception">
+				<description></description>
+			</property-metadata>
+		</rule-metadata>
+	</rule-group-metadata>
+</checkstyle-metadata>

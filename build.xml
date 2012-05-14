@@ -1,0 +1,35 @@
+<project name="CheckstyleSamples" default="all" basedir=".">
+	<property name="project.dist.dir" value="${basedir}/dist" />
+	<property name="project.classes.dir" value="${basedir}/bin" />
+	<property name="project.src.dir" value="${basedir}/src" />
+	<property name="project.lib.dir" value="${basedir}/lib" />
+	<target name="all" depends="createJar" />
+	<path id="project.class.path">
+		<fileset dir="${project.lib.dir}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<target name="build" depends="clean">
+		<echo message="============ B U I L D I N G   C L A S S E S   N O W . . . . . . . . . . . . . ============" />
+		<javac destdir="${project.classes.dir}" classpathref="project.class.path" debug="on" deprecation="on" optimize="off" excludes="${excluded.packages.patterns}">
+			<src path="${project.src.dir}" />
+		</javac>
+		<copy todir="${project.classes.dir}">
+			<fileset dir="${project.src.dir}">
+				<include name="**/*.xml" />
+				<include name="**/*.properties" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="createJar" depends="build" description="Export jar file">
+		<echo message="============ E X P O R T I N G   J A R   N O W . . . . . . ============" />
+		<jar destfile="${project.dist.dir}/checkstylesamples.jar">
+			<fileset dir="${project.classes.dir}" />
+		</jar>
+	</target>
+
+	<target name="clean">
+		<delete file="${project.dist.dir}/checkstylesamples.jar" />
+		<delete dir="${project.classes.dir}/com" />
+	</target>
+</project>

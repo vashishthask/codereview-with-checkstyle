@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This configuration file was written by the eclipse-cs plugin configuration editor-->
+<!--Checkstyle-Configuration: test
+	Description:-->
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+	<property name="severity" value="error" />
+	<module name="TreeWalker">
+		<property name="severity" value="error" />
+		<!--module name="com.xebia.article.checkstyle.check.MethodLimitCheck">
+			<property name="severity" value="error" />
+			<property name="max" value="3" />
+		</module-->
+		
+		<!--module
+			name="com.xebia.article.checkstyle.check.IllegalMethodCallInLoopCheck">
+			<property name="severity" value="error" />
+			<property name="methodNames" value="length,size" />
+		</module-->
+		<!--module
+			name="com.xebia.article.checkstyle.check.IllegalExceptionCatchCheck">
+			<property name="severity" value="error" />
+			<property name="inclClassNames" value="Delegate" />
+			<property name="excpNames" value="Exception" />
+		</module-->
+		<module
+			name="com.xebia.article.checkstyle.check.IllegalExceptionThrowsCheck">
+			<property name="severity" value="error" />
+			<property name="illegalExceptionThrows" value="Exception" />
+		</module>
+		<!--module
+			name="com.xebia.article.checkstyle.check.IllegalLoggerUsageCheck">
+			<property name="severity" value="error" />
+			<property name="illegalLoggerUsage" value="error,info" />
+		</module>
+
+		<module name="com.xebia.article.checkstyle.check.TraceMessagesCheck">
+			<property name="severity" value="error" />
+			<property name="traceEnterMethod" value="traceEnter"/>
+			<property name="traceExitMethod" value="traceExit"/>
+		</module-->
+		<!--module
+			name="com.xebia.article.checkstyle.check.MethodCallWithoutObjectCreation">
+			<property name="severity" value="error" />
+		</module-->
+			
+			
+		<!-- module name="com.xebia.article.checkstyle.check.NoStateVariables">
+			<property name="severity" value="error" />
+			<property name="classTypes" value="ServiceImpl,DAOImpl"/>
+		</module>
+			
+		<module name="GenericIllegalRegexp">
+			<property name="format" value="printStackTrace()" />
+		</module>
+			
+		<module name="GenericIllegalRegexp">
+			<property name="format" value="System\.out" />
+		</module>
+			
+		<module name="UncommentedMain" />
+		<module name="AvoidNestedBlocksCheck" />
+			
+		<module name="EmptyBlock">
+			<property name="tokens" value="LITERAL_CATCH" />
+			<property name="option" value="text" />
+		</module-->
+	</module>
+</module>
