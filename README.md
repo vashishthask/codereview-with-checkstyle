@@ -44,7 +44,7 @@ This Check checks if a method call has been used in a loop condition.
 To run the test condition use:
   run.bat samples\SingletonSample.java
 
-##IllegalExceptionCatchCheck and IllegalExceptionThrowsCheck Check
+###IllegalExceptionCatchCheck and IllegalExceptionThrowsCheck Check
 These two checks focuses on catching instances where something illegal exception type is caught or thrown in methods.
 To run the test conditions use:
   run.bat samples\Test.java
