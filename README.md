@@ -1,7 +1,5 @@
 #Checkstyle Samples application
 
-@author ShriKant
-
 In this application a lot of custom Checkstyle rules have been created. For some, test conditions have been prepared. 
 This document provides the details about them and also on how to run them.
 
