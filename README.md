@@ -19,34 +19,32 @@ the one you want to execute.
 
 ###MethodCallWithoutObjectCreation Check
 This Check provides the instances where a method has been called on an uninitialized variable.
---To run the test condition use:
+To run the test condition use:
   run.bat samples\InterfaceServiceImpl.java
 
 ###MethodLimitCheck Check
-This Check checks the number of methods inside a class. If it exceeds from a pre-determined number,
-it gives the error.
---To run the test condition use:
+This Check checks the number of methods inside a class. If it exceeds from a pre-determined number, it gives the error.
+To run the test condition use:
   run.bat samples\Test.java
 
-##TraceMessagesCheck Check
+###TraceMessagesCheck Check
 This Check checks if for a specific pattern of classes, trace messages for method enter and exit
 are there or not.
---To run the test condition use:
+To run the test condition use:
   run.bat samples\TraceEnterSample.java
   
-##NoStateVariables Check
+###NoStateVariables Check
 This Check validates if a pattern of classes contains state variables when those classes are supposed 
 to be stateless.
---To run the test condition use:
+To run the test condition use:
   run.bat samples\SingletonSample.java
   
-##IllegalMethodCallInLoopCheck Check
+###IllegalMethodCallInLoopCheck Check
 This Check checks if a method call has been used in a loop condition.
---To run the test condition use:
+To run the test condition use:
   run.bat samples\SingletonSample.java
 
 ##IllegalExceptionCatchCheck and IllegalExceptionThrowsCheck Check
-These two checks focuses on catching instances where something illegal exception type is caught or thrown
-in methods.
---To run the test conditions use:
+These two checks focuses on catching instances where something illegal exception type is caught or thrown in methods.
+To run the test conditions use:
   run.bat samples\Test.java
