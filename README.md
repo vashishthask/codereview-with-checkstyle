@@ -3,6 +3,8 @@
 In this application a lot of custom Checkstyle rules have been created. For some, test conditions have been prepared. 
 This document provides the details about them and also on how to run them.
 
+## for testing purposes
+
 
 ##Build
 To build the application simply run build.bat on Windows platform or run build.sh on UNIX/LINUX platform.
